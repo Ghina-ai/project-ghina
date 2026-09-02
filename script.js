@@ -3,11 +3,9 @@ const nama = document.querySelector('input[name="name"]');
 const email = document.querySelector('input[email="email"]');
 const pesan = document.querySelector('textarea[message="message"]');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+form.addEventListener('submit', () => {
     alert('Thank you for your message!');
-    nama.value = '';
-    email.value = '';
-    pesan.value = '';
+        nama.value = '';
+        email.value = '';
+        pesan.value = '';
 });
-
